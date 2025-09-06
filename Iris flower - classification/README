@@ -1,0 +1,78 @@
+Iris Flower Classification (Multi-Class Classification)
+
+Project Overview
+
+This project implements a machine learning model to classify iris flowers into three species:
+
+Setosa
+
+Versicolor
+
+Virginica
+
+
+The dataset used is the famous Iris Dataset introduced by Ronald Fisher in 1936, which contains 150 samples with four features:
+
+Sepal Length
+
+Sepal Width
+
+Petal Length
+
+Petal Width
+
+
+The task is a multi-class classification problem where the model predicts the species of a flower based on these measurements.
+
+
+---
+
+Steps in the Project
+
+1. Data Loading – Import the iris dataset from sklearn.datasets.
+
+
+2. Data Exploration – Understand the structure, classes, and distribution of features.
+
+
+3. Data Preprocessing – Split the dataset into training and testing sets.
+
+
+4. Model Training – Train a classifier (Random Forest, Logistic Regression, etc.) on the training data.
+
+
+5. Model Evaluation – Evaluate using metrics such as accuracy score and confusion matrix.
+
+
+6. Model Saving (Optional) – Save the trained model with joblib for later use or deployment.
+
+
+
+
+---
+
+Technologies Used
+
+Python 
+
+scikit-learn
+
+pandas, numpy
+
+matplotlib / seaborn (for visualization)
+
+joblib (for model saving)
+
+
+
+---
+Results
+
+Achieved high accuracy (around 95–98%) on the test set.
+
+Confusion matrix showed that the model correctly identified most flower classes.
+
+
+---
+
+This project demonstrates the complete machine learning workflow for a multi-class classification problem, from data preprocessing to deployment readiness.
