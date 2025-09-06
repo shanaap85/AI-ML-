@@ -1,0 +1,65 @@
+🏠 House Price Prediction (Regression Project)
+
+This project focuses on predicting house sale prices using a dataset containing various housing features such as lot size, neighborhood, year built, and overall quality. Since the target variable (SalePrice) is continuous, this is framed as a regression problem.
+
+The main goal is to build machine learning models that can learn from the historical housing data and accurately predict house prices for unseen properties.
+
+Dataset
+
+Source: Kaggle’s House Prices – Advanced Regression Techniques dataset
+
+Size: ~1,460 training examples, ~80 features (numeric and categorical).
+
+Target: SalePrice (continuous variable).
+
+Key features include:
+
+LotArea (lot size in square feet)
+
+OverallQual (overall material and finish quality)
+
+YearBuilt (year of construction)
+
+Neighborhood (location)
+
+GarageArea, 1stFlrSF, GrLivArea, etc.
+
+Methodology
+
+1. Data Preprocessing
+
+Handled missing values (median for numeric, mode for categorical).
+
+Dropped irrelevant columns (e.g., Name, Id).
+
+Encoded categorical variables using One-Hot Encoding.
+
+Split dataset into train and validation sets.
+
+2. Model Building
+
+Two models were tested:
+
+Linear Regression (baseline model)
+
+Train RMSE: ~31,573
+
+Validation RMSE: ~25,372
+
+Random Forest Regressor (ensemble model)
+
+Train RMSE: ~11,835
+
+Validation RMSE: ~22,167
+
+Results & Insights
+
+Random Forest significantly outperformed Linear Regression, reducing the prediction error by ~13%.
+
+Validation RMSE of ~22,000 indicates the model predicts prices within a 10–20% error margin, which is reasonable given the dataset complexity.
+
+Top predictive features included OverallQual, GrLivArea, GarageCars, and TotalBsmtSF.
+
+Conclusion
+
+This project demonstrates a complete end-to-end regression pipeline, starting from data cleaning and feature engineering to model training and evaluation. The Random Forest model achieved better performance compared to Linear Regression, showing that ensemble methods capture housing price patterns more effectively.
